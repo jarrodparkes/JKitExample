@@ -1,0 +1,3 @@
+[submodule "JKit"]
+	path = JKit
+	url = https://github.com/jarrodparkes/JKit
