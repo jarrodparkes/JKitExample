@@ -18,6 +18,7 @@ struct TextInputExample: TextInputDisplayable {
     let textContentType: UITextContentType?
     let autocorrectionType: UITextAutocorrectionType
     let autocapitalizationType: UITextAutocapitalizationType
+    let returnKeyType: UIReturnKeyType
     
     // MARK: TextInputDisplayable
     
@@ -54,6 +55,7 @@ extension TextInputExample {
                              textContentType: nil,
                              autocorrectionType: .no,
                              autocapitalizationType: .none,
+                             returnKeyType: .done,
                              label: "Social Security Number",
                              placeholder: "###-##-####",
                              tip: "Don't worry. We'll keep it secure!",
@@ -69,6 +71,7 @@ extension TextInputExample {
                              textContentType: nil,
                              autocorrectionType: .no,
                              autocapitalizationType: .none,
+                             returnKeyType: .default,
                              label: "Biography",
                              placeholder: "Enter a short biography here.",
                              tip: "Keep it brief.",
@@ -91,6 +94,7 @@ extension TextInputExample {
                              textContentType: nil,
                              autocorrectionType: .no,
                              autocapitalizationType: .none,
+                             returnKeyType: .done,
                              label: "Tip",
                              placeholder: "$0",
                              tip: "How much tip are you taking home?",
@@ -106,6 +110,7 @@ extension TextInputExample {
                              textContentType: nil,
                              autocorrectionType: .no,
                              autocapitalizationType: .none,
+                             returnKeyType: .done,
                              label: "Tip",
                              placeholder: "$0.00",
                              tip: "How much tip are you taking home?",
