@@ -36,8 +36,14 @@ struct Color {
 // MARK: - Color: ColorCellDisplayable
 
 extension Color: ColorCellDisplayable {
-    var backgroundColor: UIColor? { return color }
-    var titleColor: UIColor { return textColor }
     var title: String { return "\(category.rawValue) / \(name)" }
     var subtitle: String { return hex }
+    
+    func backgroundColor(colors: Colors) -> UIColor? {
+        return color
+    }
+    
+    func titleColor(colors: Colors) -> UIColor? {
+        return textColor
+    }
 }

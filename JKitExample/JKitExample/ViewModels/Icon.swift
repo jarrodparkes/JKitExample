@@ -26,7 +26,8 @@ extension Icon: ActionListCellDisplayable {
         
     var subtitle: String? { return nil }
     var accessoryStyle: ActionListAccessoryViews { return .none }
-    var customIconTintColor: UIColor? { return nil }
-    var customTitleTextColor: UIColor? { return nil }
-    var customBackgroundColor: UIColor? { return nil }
+    
+    func customIconTintColor(colors: Colors) -> UIColor? { return nil }
+    func customTitleTextColor(colors: Colors) -> UIColor? { return nil }
+    func customBackgroundColor(colors: Colors) -> UIColor? { return nil }
 }
