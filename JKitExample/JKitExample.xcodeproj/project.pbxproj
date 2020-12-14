@@ -32,7 +32,6 @@
 		A925158E256F2A4000C42F05 /* TextInputExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9251554256F2A4000C42F05 /* TextInputExamples.swift */; };
 		A925158F256F2A4000C42F05 /* AlertExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9251555256F2A4000C42F05 /* AlertExamples.swift */; };
 		A9251590256F2A4000C42F05 /* SelectionGroupExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9251556256F2A4000C42F05 /* SelectionGroupExamples.swift */; };
-		A9251591256F2A4000C42F05 /* ScheduleStatusVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9251558256F2A4000C42F05 /* ScheduleStatusVC.swift */; };
 		A9251592256F2A4000C42F05 /* LaunchScreen.strings in Resources */ = {isa = PBXBuildFile; fileRef = A925155A256F2A4000C42F05 /* LaunchScreen.strings */; };
 		A9251593256F2A4000C42F05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A925155E256F2A4000C42F05 /* Assets.xcassets */; };
 		A9251594256F2A4000C42F05 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A925155F256F2A4000C42F05 /* LaunchScreen.xib */; };
@@ -86,7 +85,6 @@
 		A9251554256F2A4000C42F05 /* TextInputExamples.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputExamples.swift; sourceTree = "<group>"; };
 		A9251555256F2A4000C42F05 /* AlertExamples.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertExamples.swift; sourceTree = "<group>"; };
 		A9251556256F2A4000C42F05 /* SelectionGroupExamples.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionGroupExamples.swift; sourceTree = "<group>"; };
-		A9251558256F2A4000C42F05 /* ScheduleStatusVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleStatusVC.swift; sourceTree = "<group>"; };
 		A925155B256F2A4000C42F05 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		A925155C256F2A4000C42F05 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		A925155D256F2A4000C42F05 /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
@@ -147,7 +145,6 @@
 			children = (
 				A9251546256F2A4000C42F05 /* AppDelegate.swift */,
 				A9251559256F2A4000C42F05 /* Assets */,
-				A9251557256F2A4000C42F05 /* Atoms */,
 				A9251561256F2A4000C42F05 /* Controllers */,
 				A9251537256F2A4000C42F05 /* Coordinators */,
 				A9251550256F2A4000C42F05 /* Examples */,
@@ -226,14 +223,6 @@
 			path = Examples;
 			sourceTree = "<group>";
 		};
-		A9251557256F2A4000C42F05 /* Atoms */ = {
-			isa = PBXGroup;
-			children = (
-				A9251558256F2A4000C42F05 /* ScheduleStatusVC.swift */,
-			);
-			path = Atoms;
-			sourceTree = "<group>";
-		};
 		A9251559256F2A4000C42F05 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -260,15 +249,15 @@
 		A9251562256F2A4000C42F05 /* Atoms */ = {
 			isa = PBXGroup;
 			children = (
-				A9251563256F2A4000C42F05 /* TextInputVC.swift */,
-				A9251564256F2A4000C42F05 /* ButtonsContainedVC.swift */,
 				A9251565256F2A4000C42F05 /* ButtonsBarVC.swift */,
-				A9251566256F2A4000C42F05 /* SelectionControlVC.swift */,
-				A9251567256F2A4000C42F05 /* ButtonsTextVC.swift */,
+				A9251564256F2A4000C42F05 /* ButtonsContainedVC.swift */,
 				A9251568256F2A4000C42F05 /* ButtonsOutlineVC.swift */,
-				A9251569256F2A4000C42F05 /* MenuVC.swift */,
+				A9251567256F2A4000C42F05 /* ButtonsTextVC.swift */,
 				A925156A256F2A4000C42F05 /* ButtonsVC.swift */,
+				A9251569256F2A4000C42F05 /* MenuVC.swift */,
+				A9251566256F2A4000C42F05 /* SelectionControlVC.swift */,
 				A925156B256F2A4000C42F05 /* StateSwappingVC.swift */,
+				A9251563256F2A4000C42F05 /* TextInputVC.swift */,
 			);
 			path = Atoms;
 			sourceTree = "<group>";
@@ -385,7 +374,6 @@
 				A9251586256F2A4000C42F05 /* SelectionGroupExample.swift in Sources */,
 				A9251598256F2A4000C42F05 /* SelectionControlVC.swift in Sources */,
 				A9251583256F2A4000C42F05 /* Icon.swift in Sources */,
-				A9251591256F2A4000C42F05 /* ScheduleStatusVC.swift in Sources */,
 				A925158F256F2A4000C42F05 /* AlertExamples.swift in Sources */,
 				A92515A0256F2A4000C42F05 /* CalendarVC.swift in Sources */,
 				A92515A7256F2A4000C42F05 /* ColorsVC.swift in Sources */,

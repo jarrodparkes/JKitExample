@@ -49,7 +49,7 @@ class ColorCell: BaseTableViewCell {
         let textColor = displayable.titleColor(colors: colors) ?? colors.textHighEmphasis
         
         backgroundColor = displayable.backgroundColor(colors: colors)
-        textLabel?.attributedText = displayable.title.attributed(fontStyle: .labelLarge, color: textColor)
-        detailTextLabel?.attributedText = displayable.subtitle.attributed(fontStyle: .bodySmall, color: textColor)
+        textLabel?.attributedText = displayable.title.attributed(fontStyle: .label, color: textColor)
+        detailTextLabel?.attributedText = displayable.subtitle.attributed(fontStyle: .body, color: textColor)
     }
 }

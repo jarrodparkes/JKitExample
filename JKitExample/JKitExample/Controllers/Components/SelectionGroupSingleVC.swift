@@ -90,7 +90,7 @@ class SelectionGroupSingleVC: UIViewController {
     
     func createLabel(text: String) -> UILabel {
         let label = UILabel(frame: .zero)
-        label.attributedText = text.attributed(fontStyle: .labelLarge, color: theme.colors.textHighEmphasis)
+        label.attributedText = text.attributed(fontStyle: .label, color: theme.colors.textHighEmphasis)
         return label
     }
 }

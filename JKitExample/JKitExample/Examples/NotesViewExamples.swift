@@ -53,24 +53,24 @@ extension NotesViewExamples {
         
         let examples: [NotesViewDisplayable] = [
             Notes(notes: []),
-            Notes(notes: [Note(config: .text(.bodyLarge, nil, nil), text: "Some body text.")],
+            Notes(notes: [Note(config: .text(.body, nil, nil), text: "Some body text.")],
                   showBackground: false,
                   isContentInset: false),
-            Notes(notes: [Note(config: .text(.bodyLarge, nil, nil), text: "Some body text.")],
+            Notes(notes: [Note(config: .text(.body, nil, nil), text: "Some body text.")],
                   showBackground: false,
                   isContentInset: true),
             Notes(notes: [
-                Note(config: .text(.bodyLarge, nil, nil), text: "Some body text."),
-                Note(config: .text(.bodyLarge, nil, nil), text: "Some body text."),
-                Note(config: .text(.bodyLarge, nil, nil), text: "Some body text.")
+                Note(config: .text(.body, nil, nil), text: "Some body text."),
+                Note(config: .text(.body, nil, nil), text: "Some body text."),
+                Note(config: .text(.body, nil, nil), text: "Some body text.")
             ]),
             Notes(notes: [
-                Note(config: .text(.labelLarge, nil, nil), text: "Some body text about a website."),
+                Note(config: .text(.body, nil, nil), text: "Some body text about a website."),
                 Note(config: .link("https://spurwork.com"), text: "A link to website.")
             ]),
             Notes(notes: [
-                Note(config: .text(.labelLarge, nil, nil), text: "Section Title"),
-                Note(config: .text(.bodyLarge, nil, nil), text: "Some body text about a section.")
+                Note(config: .text(.label, nil, nil), text: "Section Title"),
+                Note(config: .text(.body, nil, nil), text: "Some body text about a section.")
             ]),
             Notes(notes: [
                 Note(config: .link("https://spurwork.com"), text: "Contact Support")

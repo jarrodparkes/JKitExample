@@ -11,6 +11,13 @@ import JKit
 
 extension FontStyle: TypographyCellDisplayable {
     var fontStyle: FontStyle { return self }
-    var title: String { return "\(rawValue) / System" }
-    var subtitle: String { return "\(sketchFontSize) / \(letterSpacing) letter-spacing / \(sketchLineHeight)" }
+    
+    var title: String {
+        let string = "\(self) / \(font.fontName)"
+        return string.capitalized
+    }
+    
+    var subtitle: String {
+        return "\(size) / \(lineHeight) LH"
+    }
 }

@@ -61,7 +61,7 @@ class ExampleCell: BaseTableViewCell {
             }
         }
         
-        titleLabel.attributedText = "\(title)".attributed(fontStyle: .labelLarge,
+        titleLabel.attributedText = "\(title)".attributed(fontStyle: .label,
                                                           color: theme.colors.textHighEmphasis)
                                 
         

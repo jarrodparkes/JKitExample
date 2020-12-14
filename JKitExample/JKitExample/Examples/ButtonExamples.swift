@@ -41,21 +41,9 @@ struct ButtonExamples: ExamplesVCDisplayable {
 extension ButtonExamples {
     static func mock(theme: Theme) -> ButtonExamples {
         return ButtonExamples(styles: [
-            ("Contained: Primary", .contained(.primary)),
-            ("Contained: Secondary 1", .contained(.secondary1)),
-            ("Contained: Secondary 2", .contained(.secondary2)),
-            ("Contained: Secondary 3", .contained(.secondary3)),
-            ("Contained: Secondary 4", .contained(.secondary4)),
-            ("Contained: Secondary 5", .contained(.secondary5)),
-            ("Outline: Primary", .outline(.primary)),
-            ("Outline: Secondary 0", .outline(.secondary0)),
-            ("Outline: Secondary 1", .outline(.secondary1)),
-            ("Outline: Secondary 2", .outline(.secondary2)),
-            ("Outline: Secondary 3", .outline(.secondary3)),
-            ("Outline: Secondary 4", .outline(.secondary4)),
-            ("Outline: Secondary 5", .outline(.secondary5)),
-            ("Text: Primary", .text(.primary, .center)),
-            ("Text: Secondary", .text(.secondary, .center))
+            ("Contained", .contained(.white, .purple)),
+            ("Outline", .outline(.black, .purple)),
+            ("Text", .text(.black, .center)),
         ])
     }
 }

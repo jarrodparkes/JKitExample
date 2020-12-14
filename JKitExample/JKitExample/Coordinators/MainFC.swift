@@ -81,13 +81,9 @@ class MainFC: JKitExampleFC {
             .h2,
             .h3,
             .h4,
-            .h5,
-            .h6,
-            .buttonText,
-            .labelLarge,
-            .labelSmall,
-            .bodyLarge,
-            .bodySmall]
+            .label,
+            .body,
+            .caption]
         
         let typographyVC = TypographyVC(fontStyles: fontStyles)
         navigationController.pushViewController(typographyVC, animated: true)
@@ -98,8 +94,7 @@ class MainFC: JKitExampleFC {
         
         let icons = [
             Icon(name: "Add", image: images.add),
-            Icon(name: "Bell", image: images.bell),
-            Icon(name: "Briefcase", image: images.briefcase),
+            Icon(name: "Bell", image: images.bell),            
             Icon(name: "Camera", image: images.camera),
             Icon(name: "CaretDown", image: images.caretDown),
             Icon(name: "CaretLeft", image: images.caretLeft),
@@ -131,7 +126,6 @@ class MainFC: JKitExampleFC {
             Icon(name: "PhoneCall", image: images.phoneCall),
             Icon(name: "Profile", image: images.profile),
             Icon(name: "Search", image: images.search),
-            Icon(name: "Ticket", image: images.ticket),
             Icon(name: "TimeClock", image: images.timeClock),
             Icon(name: "Uniform", image: images.uniform),
             Icon(name: "User", image: images.user),
@@ -144,29 +138,16 @@ class MainFC: JKitExampleFC {
     
     func startColorsVC() {
         let colors = [
-            Color(category: .surface, name: "Black", color: .surfaceBlack, textColor: .white),
-            Color(category: .textOnSurface, name: "High Emphasis", color: .white, textColor: .textHighEmphasis),
-            Color(category: .textOnSurface, name: "Medium Emphasis", color: .white, textColor: .textMediumEmphasis),
-            Color(category: .textOnSurface, name: "Disabled", color: .white, textColor: .textDisabled),
-            Color(category: .primary, name: "Gold", color: .primaryGold, textColor: .white),
-            Color(category: .primary, name: "Beige", color: .primaryBeige, textColor: .textHighEmphasis),
-            Color(category: .primary, name: "Beige 2", color: .primaryBeige2, textColor: .textHighEmphasis),
-            Color(category: .supportive, name: "Black 400", color: .supportBlack400, textColor: .white),
-            Color(category: .supportive, name: "Black 300", color: .supportBlack300, textColor: .white),
-            Color(category: .supportive, name: "Black 200", color: .supportBlack200, textColor: .white),
-            Color(category: .supportive, name: "Black 100", color: .supportBlack100, textColor: .white),
-            Color(category: .supportive, name: "Grey 400", color: .supportGrey400, textColor: .white),
-            Color(category: .secondary, name: "Blue", color: .secondaryBlue, textColor: .textHighEmphasis),
-            Color(category: .secondary, name: "Green", color: .secondaryGreen, textColor: .textHighEmphasis),
-            Color(category: .secondary, name: "Orange", color: .secondaryOrange, textColor: .textHighEmphasis),
-            Color(category: .secondary, name: "Pink", color: .secondaryPink, textColor: .textHighEmphasis),
-            Color(category: .secondary, name: "Purple", color: .secondaryPurple, textColor: .white),
-            Color(category: .supportive, name: "State Blue", color: .stateBlue, textColor: .white),
-            Color(category: .supportive, name: "State Green", color: .stateGreen, textColor: .white),
-            Color(category: .supportive, name: "State Yellow", color: .stateYellow, textColor: .textHighEmphasis),
-            Color(category: .supportive, name: "Error Red", color: .errorRed, textColor: .white),
-            Color(category: .supportive, name: "Error Red Hover", color: .errorRedHover, textColor: .white),
-            Color(category: .supportive, name: "Error Red Pressed", color: .errorRedPressed, textColor: .white)
+            Color(category: .primary, name: "Example", color: .purple, textColor: .white),
+            Color(category: .grayscale, name: "Black", color: .black, textColor: .white),
+            Color(category: .grayscale, name: "Dark Gray", color: .darkGray, textColor: .white),
+            Color(category: .grayscale, name: "Gray", color: .gray, textColor: .white),
+            Color(category: .grayscale, name: "Light Gray", color: .lightGray, textColor: .white),
+            Color(category: .grayscale, name: "White", color: .white, textColor: .black),
+            Color(category: .state, name: "Example Status", color: .blue, textColor: .white),
+            Color(category: .state, name: "Example Success", color: .green, textColor: .black),
+            Color(category: .state, name: "Example Warning", color: .yellow, textColor: .black),
+            Color(category: .state, name: "Example Error", color: .red, textColor: .black),
         ]
         
         let colorsVC = ColorsVC(colors: colors)

@@ -32,7 +32,7 @@ struct StatusViewExamples: ExamplesVCDisplayable {
         let style = styles[indexPath.row]
         let view = exampleViews[indexPath.row]
         (view as? StatusView)?.styleWith(theme: theme,
-                                         displayable: SimpleStatus(status: style.0, type: style.1))
+                                         displayable: SimpleStatus(status: style.0, type: style.1))        
         return view
     }
 }

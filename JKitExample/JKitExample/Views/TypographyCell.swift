@@ -44,6 +44,6 @@ class TypographyCell: BaseTableViewCell {
         let textColor = colors.textHighEmphasis
         
         textLabel?.attributedText = displayable.title.attributed(fontStyle: displayable.fontStyle, color: textColor)
-        detailTextLabel?.attributedText = displayable.subtitle.attributed(fontStyle: .bodyLarge, color: textColor)
+        detailTextLabel?.attributedText = displayable.subtitle.attributed(fontStyle: displayable.fontStyle, color: textColor)
     }
 }

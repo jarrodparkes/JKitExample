@@ -60,12 +60,12 @@ class ComponentsFC: JKitExampleFC {
         let images = theme.images
         let items = [
             ActionListItem(icon: images.gear, title: "Title", subtitle: "Subtitle", accessoryStyle: .detailAndNavigation(ActionListDetail(detail: "Detail"), .push), customIconTintColor: .red),
-            ActionListItem(icon: images.gear, title: "Title", subtitle: "Subtitle", accessoryStyle: .detailAndNavigation(ActionListDetail(detail: "Detail"), .present), customTitleTextColor: .stateGreen),
+            ActionListItem(icon: images.gear, title: "Title", subtitle: "Subtitle", accessoryStyle: .detailAndNavigation(ActionListDetail(detail: "Detail"), .present), customTitleTextColor: .green),
             ActionListItem(icon: images.gear, title: "Title", subtitle: "Subtitle", accessoryStyle: .detailAndNavigation(ActionListDetail(detail: "Detail"), .none)),
             ActionListItem(icon: images.gear, title: "Title", subtitle: "Subtitle", accessoryStyle: .detailOnly(ActionListDetail(detail: "Detail", customTextColor: .purple))),
             ActionListItem(icon: images.gear, title: "Title", subtitle: "Subtitle", accessoryStyle: .detailOnly(nil)),
             ActionListItem(icon: images.gear, title: "Title", subtitle: nil, accessoryStyle: .detailOnly(ActionListDetail(detail: "Detail"))),
-            ActionListItem(icon: nil, title: "Title", subtitle: nil, accessoryStyle: .statusAndDetail(SimpleStatus(status: "Status", type: .normal), ActionListDetail(detail: "Detail"))),
+            ActionListItem(icon: nil, title: "Title", subtitle: nil, accessoryStyle: .statusAndDetail(SimpleStatus(status: "Status", type: .success), ActionListDetail(detail: "Detail"))),
             ActionListItem(icon: nil, title: "Title", subtitle: "Subtitle", accessoryStyle: .detailOnly(nil)),
             ActionListItem(icon: nil, title: "Title", subtitle: nil, accessoryStyle: .detailOnly(ActionListDetail(detail: "Detail"))),
             ActionListItem(icon: nil, title: "Title", subtitle: nil, accessoryStyle: .none),

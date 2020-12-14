@@ -49,7 +49,7 @@ class StateSwappingVC: UIViewController {
         let halfWidth = (view.frame.width / 2.0) - 40
         let fullWidth = view.frame.width - 40
         stateLabel = UILabel(frame: CGRect(x: xOffset, y: 70, width: fullWidth, height: 44))
-        stateLabel.attributedText = "State: Enabled".attributed(fontStyle: .labelLarge, color: colors.textHighEmphasis)
+        stateLabel.attributedText = "State: Enabled".attributed(fontStyle: .label, color: colors.textHighEmphasis)
         view.addSubview(stateLabel)
         
         let stateInfoLabel = UILabel(frame: CGRect(x: xOffset,
@@ -62,7 +62,7 @@ class StateSwappingVC: UIViewController {
         State: Disabled - control cannot be tapped
         State: Selected/Focused - control has been manually selected or selected by screen reader
         State: Highlighted/Pressed - control is being pressed
-        """.attributed(fontStyle: .labelSmall, color: colors.textHighEmphasis)
+        """.attributed(fontStyle: .label, color: colors.textHighEmphasis)
         view.addSubview(stateInfoLabel)
         
         let changeStateButton = UIButton(type: .system)

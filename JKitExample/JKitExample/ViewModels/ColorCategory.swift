@@ -8,9 +8,8 @@
 // MARK: - ColorCategory: String
 
 enum ColorCategory: String {
-    case surface = "Surface"
-    case textOnSurface = "Text on Surface"
     case primary = "Primary"
-    case supportive = "Supportive"
     case secondary = "Secondary"
+    case grayscale = "Grayscale"
+    case state = "State"
 }

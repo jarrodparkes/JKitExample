@@ -48,7 +48,7 @@ class FooterVC: UITableViewController {
                                                isEnabled: true)
         
         footer.delegate = self
-        footer.styleWith(theme: theme, displayable: FooterModel(buttonState: .center("Center", .primary),
+        footer.styleWith(theme: theme, displayable: FooterModel(buttonState: .center("Center", .white, .purple),
                                                                 content: .checkbox(checkbox, "https://spurwork.com")))
         
         view.addSubview(footer)
