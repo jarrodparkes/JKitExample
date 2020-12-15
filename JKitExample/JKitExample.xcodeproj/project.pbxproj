@@ -238,13 +238,13 @@
 		A9251561256F2A4000C42F05 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				A9251562256F2A4000C42F05 /* Atoms */,
-				A925156C256F2A4000C42F05 /* ExamplesVC.swift */,
-				A925156D256F2A4000C42F05 /* Components */,
-				A90DCD3C2589194D00F6B3FA /* BaseVC.swift */,
 				A9251574256F2A4000C42F05 /* BaseTableVC.swift */,
-				A9251575256F2A4000C42F05 /* TypographyVC.swift */,
+				A90DCD3C2589194D00F6B3FA /* BaseVC.swift */,
 				A9251576256F2A4000C42F05 /* ColorsVC.swift */,
+				A925156C256F2A4000C42F05 /* ExamplesVC.swift */,
+				A9251575256F2A4000C42F05 /* TypographyVC.swift */,
+				A9251562256F2A4000C42F05 /* Atoms */,
+				A925156D256F2A4000C42F05 /* Components */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
