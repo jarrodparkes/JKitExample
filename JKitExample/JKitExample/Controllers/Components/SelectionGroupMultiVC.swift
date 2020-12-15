@@ -8,14 +8,12 @@
 import JKit
 import UIKit
 
-// MARK: - SelectionGroupMultiVC: UIViewController
+// MARK: - SelectionGroupMultiVC: BaseVC
 
-class SelectionGroupMultiVC: UIViewController {
+class SelectionGroupMultiVC: BaseVC {
     
     // MARK: Properties
-                
-    let theme = ThemeStandard()
-    
+
     var selectionGroups: [SelectionGroup] = []
     var selectionGroupExamples: [SelectionGroupDisplayable] = []
     

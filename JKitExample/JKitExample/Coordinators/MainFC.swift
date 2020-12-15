@@ -85,7 +85,7 @@ class MainFC: JKitExampleFC {
             .body,
             .caption]
         
-        let typographyVC = TypographyVC(fontStyles: fontStyles)
+        let typographyVC = TypographyVC(theme: theme, fontStyles: fontStyles)
         navigationController.pushViewController(typographyVC, animated: true)
     }
     
@@ -150,7 +150,7 @@ class MainFC: JKitExampleFC {
             Color(category: .state, name: "Example Error", color: .red, textColor: .black),
         ]
         
-        let colorsVC = ColorsVC(colors: colors)
+        let colorsVC = ColorsVC(theme: theme, colors: colors)
         navigationController.pushViewController(colorsVC, animated: true)
     }
 }

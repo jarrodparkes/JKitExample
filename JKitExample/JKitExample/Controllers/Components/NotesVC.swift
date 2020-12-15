@@ -8,25 +8,15 @@
 import JKit
 import UIKit
 
-// MARK: - NotesVC: UIViewController
+// MARK: - NotesVC: BaseVC
 
-class NotesVC: UIViewController {
-    
-    // MARK: Properties
-    
-    let theme: Theme
-                
+class NotesVC: BaseVC {
+              
     // MARK: Initializer
     
-    init(theme: Theme) {
-        self.theme = theme
-        super.init(nibName: nil, bundle: nil)
+    override init(theme: Theme) {
+        super.init(theme: theme)
         title = "Notes"
-    }
-    
-    @available(*, unavailable)
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
     
     // MARK: Life Cycle

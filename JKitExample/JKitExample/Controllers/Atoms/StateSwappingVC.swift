@@ -8,13 +8,11 @@
 import JKit
 import UIKit
 
-// MARK: - StateSwappingVC: UIViewController
+// MARK: - StateSwappingVC: BaseVC
 
-class StateSwappingVC: UIViewController {
+class StateSwappingVC: BaseVC {
     
     // MARK: Properties
-    
-    let theme = ThemeStandard()
     
     var visibleState: UIControl.State = .normal
     var stateLabel: UILabel!

@@ -22,8 +22,7 @@ protocol ExamplesVCDisplayable {
 class ExamplesVC: BaseTableVC {
     
     // MARK: Properties
-    
-    let theme: Theme
+        
     let displayable: ExamplesVCDisplayable
     
     // MARK: Initializer
@@ -33,10 +32,9 @@ class ExamplesVC: BaseTableVC {
          title: String,
          displayable: ExamplesVCDisplayable,
          forceBackable: Bool = false) {
-        self.theme = theme
         self.displayable = displayable
         
-        super.init(sizer: sizer)
+        super.init(theme: theme, sizer: sizer)
         self.title = title
     }
     

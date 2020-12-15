@@ -8,26 +8,19 @@
 import JKit
 import UIKit
 
-// MARK: - FooterVC: UITableViewController
+// MARK: - FooterVC: BaseTableVC
 
-class FooterVC: UITableViewController {
+class FooterVC: BaseTableVC {
     
     // MARK: Properties
-    
-    let theme: Theme
+        
     let footer = Footer(frame: .zero)
             
     // MARK: Initializer
     
     init(theme: Theme) {
-        self.theme = theme
-        super.init(nibName: nil, bundle: nil)
+        super.init(theme: theme, sizer: BaseTableVCSizer())
         title = "Footer"
-    }
-    
-    @available(*, unavailable)
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
     
     // MARK: Life Cycle

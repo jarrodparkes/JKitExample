@@ -8,28 +8,21 @@
 import JKit
 import UIKit
 
-// MARK: - ColorsVC: UITableViewController
+// MARK: - ColorsVC: BaseTableVC
 
-class ColorsVC: UITableViewController {
+class ColorsVC: BaseTableVC {
 
     // MARK: Properties
-
-    let theme = ThemeStandard()
 
     var colors: [ColorCellDisplayable] = []
 
     // MARK: Initializer
 
-    init(colors: [ColorCellDisplayable]) {
-        super.init(style: .plain)
+    init(theme: Theme, colors: [ColorCellDisplayable]) {
+        super.init(theme: theme, sizer: BaseTableVCSizer())
 
         self.title = "Colors"
         self.colors = colors
-    }
-
-    @available(*, unavailable)
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
 
     // MARK: Life Cycle

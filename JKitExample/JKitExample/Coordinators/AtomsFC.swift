@@ -66,16 +66,16 @@ extension AtomsFC: ActionListVCDelegate {
         let controller: UIViewController?
         
         switch row {
-        case 0: controller = ButtonsContainedVC()
-        case 1: controller = ButtonsOutlineVC()
-        case 2: controller = ButtonsTextVC()
+        case 0: controller = ButtonsContainedVC(theme: theme)
+        case 1: controller = ButtonsOutlineVC(theme: theme)
+        case 2: controller = ButtonsTextVC(theme: theme)
         case 3: controller = ExamplesVC.buttons(theme: theme)
-        case 4: controller = ButtonsBarVC()
-        case 5: controller = SelectionControlVC(type: .checkbox)
-        case 6: controller = SelectionControlVC(type: .radio)
-        case 7: controller = MenuVC()
+        case 4: controller = ButtonsBarVC(theme: theme)
+        case 5: controller = SelectionControlVC(theme: theme, type: .checkbox)
+        case 6: controller = SelectionControlVC(theme: theme, type: .radio)
+        case 7: controller = MenuVC(theme: theme)
         case 8: controller = ExamplesVC.textInputs(theme: theme)
-        case 9: controller = TextInputVC()
+        case 9: controller = TextInputVC(theme: theme)
         case 10: controller = ExamplesVC.statusViews(theme: theme)
         case 11: controller = ExamplesVC.alerts(theme: theme)
         default: controller = nil

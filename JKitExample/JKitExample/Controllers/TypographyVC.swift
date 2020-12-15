@@ -8,28 +8,21 @@
 import JKit
 import UIKit
 
-// MARK: - TypographyVC: UITableViewController
+// MARK: - TypographyVC: BaseTableVC
 
-class TypographyVC: UITableViewController {
+class TypographyVC: BaseTableVC {
 
     // MARK: Properties
-
-    let theme = ThemeStandard()
 
     var fontStyles: [TypographyCellDisplayable] = []
 
     // MARK: Initializer
 
-    init(fontStyles: [TypographyCellDisplayable]) {
-        super.init(style: .plain)
+    init(theme: Theme, fontStyles: [TypographyCellDisplayable]) {
+        super.init(theme: theme, sizer: BaseTableVCSizer())
 
         self.title = "Typographic Scale"
         self.fontStyles = fontStyles
-    }
-
-    @available(*, unavailable)
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
 
     // MARK: Life Cycle

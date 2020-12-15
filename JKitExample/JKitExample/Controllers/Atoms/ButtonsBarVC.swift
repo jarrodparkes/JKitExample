@@ -8,14 +8,12 @@
 import JKit
 import UIKit
 
-// MARK: - ButtonsBarVC: UIViewController
+// MARK: - ButtonsBarVC: BaseVC
 
-class ButtonsBarVC: UIViewController {
+class ButtonsBarVC: BaseVC {
 
     // MARK: Properties
 
-    let theme = ThemeStandard()
-    
     var count = 1
     var showBadge = true
     var badgeButton: UIBarButtonItem!

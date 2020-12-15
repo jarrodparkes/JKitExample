@@ -91,8 +91,8 @@ extension ComponentsFC: ActionListVCDelegate {
         switch row {
         case 0: controller = actionListStylesVC()
         case 1: controller = ExamplesVC.selectionGroups(theme: theme)
-        case 2: controller = SelectionGroupSingleVC()
-        case 3: controller = SelectionGroupMultiVC()
+        case 2: controller = SelectionGroupSingleVC(theme: theme)
+        case 3: controller = SelectionGroupMultiVC(theme: theme)
         case 4, 5, 6, 7, 8: controller = calendarVC(atRow: row)            
         case 9: controller = FooterVC(theme: theme)
         case 10: controller = NotesVC(theme: theme)

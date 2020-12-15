@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A90DCD3D2589194D00F6B3FA /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90DCD3C2589194D00F6B3FA /* BaseVC.swift */; };
 		A9251577256F2A4000C42F05 /* BaseFC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9251538256F2A4000C42F05 /* BaseFC.swift */; };
 		A9251578256F2A4000C42F05 /* HabaneroExampleFC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9251539256F2A4000C42F05 /* HabaneroExampleFC.swift */; };
 		A9251579256F2A4000C42F05 /* AtomsFC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A925153A256F2A4000C42F05 /* AtomsFC.swift */; };
@@ -58,6 +59,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A90DCD3C2589194D00F6B3FA /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		A925151D256F297F00C42F05 /* JKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9251538256F2A4000C42F05 /* BaseFC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseFC.swift; sourceTree = "<group>"; };
 		A9251539256F2A4000C42F05 /* HabaneroExampleFC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HabaneroExampleFC.swift; sourceTree = "<group>"; };
@@ -239,6 +241,7 @@
 				A9251562256F2A4000C42F05 /* Atoms */,
 				A925156C256F2A4000C42F05 /* ExamplesVC.swift */,
 				A925156D256F2A4000C42F05 /* Components */,
+				A90DCD3C2589194D00F6B3FA /* BaseVC.swift */,
 				A9251574256F2A4000C42F05 /* BaseTableVC.swift */,
 				A9251575256F2A4000C42F05 /* TypographyVC.swift */,
 				A9251576256F2A4000C42F05 /* ColorsVC.swift */,
@@ -362,6 +365,7 @@
 				A9251584256F2A4000C42F05 /* TextInputExample.swift in Sources */,
 				A9251582256F2A4000C42F05 /* AppDelegate.swift in Sources */,
 				A925158B256F2A4000C42F05 /* ButtonExamples.swift in Sources */,
+				A90DCD3D2589194D00F6B3FA /* BaseVC.swift in Sources */,
 				A9251596256F2A4000C42F05 /* ButtonsContainedVC.swift in Sources */,
 				A925157B256F2A4000C42F05 /* ComponentsFC.swift in Sources */,
 				A925157D256F2A4000C42F05 /* FontStyle+Helpers.swift in Sources */,

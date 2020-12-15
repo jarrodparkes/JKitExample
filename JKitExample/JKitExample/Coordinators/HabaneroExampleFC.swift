@@ -14,9 +14,13 @@ class JKitExampleFC: BaseFC {
 
     // MARK: Helpers
 
-    func displayAlert(title: String, message: String) {
-        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
-        rootViewController.present(alert, animated: true, completion: nil)
+    func displayAlert(title: String, message: String) {        
+        let alert = Alert(type: .error, message: message, duration: 2.0, anchor: .bottom)
+        
+        AlertManager.shared.show(alert,
+                                 onView: rootViewController.view,
+                                 withTheme: theme,
+                                 alertHandler: nil,
+                                 completionHandler: nil)
     }
 }

@@ -15,13 +15,12 @@ protocol ActionListVCDelegate: class {
     func actionListVCTappedRow(_ actionListVC: ActionListVC, row: Int)
 }
 
-// MARK: - ActionListVC: UITableViewController
+// MARK: - ActionListVC: BaseTableVC
 
-class ActionListVC: UITableViewController {
+class ActionListVC: BaseTableVC {
 
     // MARK: Properties
 
-    let theme: Theme
     var items: [ActionListCellDisplayable] = []
 
     weak var delegate: ActionListVCDelegate?
@@ -32,20 +31,19 @@ class ActionListVC: UITableViewController {
          title: String,
          items: [String],
          forceBackable: Bool = false) {
-        self.theme = theme
         self.items = items.map { ActionListItem(icon: nil, title: $0, navigationStyle: .push) }
 
-        super.init(style: .plain)
+        super.init(theme: theme, sizer: BaseTableVCSizer())
+        
         finishInit(title: title, forceBackable: forceBackable)
     }
     
     init(theme: Theme,
          title: String,
          items: [ActionListCellDisplayable]) {
-        self.theme = theme
         self.items = items
 
-        super.init(style: .plain)
+        super.init(theme: theme, sizer: BaseTableVCSizer())
 
         finishInit(title: title, forceBackable: false)
     }
@@ -53,11 +51,6 @@ class ActionListVC: UITableViewController {
     private func finishInit(title: String, forceBackable: Bool) {
         self.title = title
         if forceBackable { addForceBackable() }
-    }
-
-    @available(*, unavailable)
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
 
     // MARK: Life Cycle

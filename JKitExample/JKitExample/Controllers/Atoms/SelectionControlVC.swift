@@ -24,16 +24,12 @@ class SelectionControlVC: StateSwappingVC {
     
     // MARK: Initializer
     
-    init(type: SelectionControlType) {
+    init(theme: Theme, type: SelectionControlType) {
         self.type = type
-        super.init(nibName: nil, bundle: nil)
+        
+        super.init(theme: theme)
         
         title = (type == .radio) ? "Radio Buttons" : "Checkboxes"
-    }
-    
-    @available(*, unavailable)
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
     
     // MARK: Life Cycle

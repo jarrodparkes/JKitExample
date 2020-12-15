@@ -8,13 +8,12 @@
 import JKit
 import UIKit
 
-// MARK: - CalendarVC: UIViewController
+// MARK: - CalendarVC: BaseVC
 
-class CalendarVC: UIViewController {
+class CalendarVC: BaseVC {
     
     // MARK: Properties
-    
-    let theme: Theme
+        
     let config: HCalendarViewConfig
     let datesToStatus: [Date: [CalendarDayStatus]]
     let highlightedDates: [Date]
@@ -23,20 +22,14 @@ class CalendarVC: UIViewController {
         
     // MARK: Initializer
     
-    init(theme: Theme, config: HCalendarViewConfig, datesToStatus: [Date: [CalendarDayStatus]], highlightedDates: [Date] = []) {
-        self.theme = theme
+    init(theme: Theme, config: HCalendarViewConfig, datesToStatus: [Date: [CalendarDayStatus]], highlightedDates: [Date] = []) {        
         self.config = config
         self.datesToStatus = datesToStatus
         self.highlightedDates = highlightedDates
         
-        super.init(nibName: nil, bundle: nil)
+        super.init(theme: theme)
         
         title = "Calendar"
-    }
-    
-    @available(*, unavailable)
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
     
     // MARK: Life Cycle

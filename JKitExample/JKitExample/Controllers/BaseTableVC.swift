@@ -5,6 +5,7 @@
 //  Created by Jarrod Parkes on 7/29/20.
 //
 
+import JKit
 import UIKit
 
 // MARK: - TableVCSizer
@@ -55,11 +56,13 @@ class BaseTableVC: UITableViewController {
 
     // MARK: Properties
 
-    var sizer: TableVCSizer
+    let theme: Theme
+    let sizer: TableVCSizer
 
     // MARK: Initializer
 
-    init(sizer: TableVCSizer) {
+    init(theme: Theme, sizer: TableVCSizer) {
+        self.theme = theme
         self.sizer = sizer
         super.init(style: .plain)
     }

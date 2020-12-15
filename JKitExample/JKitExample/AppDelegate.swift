@@ -22,16 +22,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-
-        // load fonts
-        ThemeStandard.loadFonts()
-
+        // init theme
+        let theme = ThemeStandard()
+        
         // create main window
         window = UIWindow(frame: UIScreen.main.bounds)
         guard let window = window else { return false }
 
         // start initial flow
-        mainFC = MainFC(window: window, theme: ThemeStandard())
+        mainFC = MainFC(window: window, theme: theme)
         mainFC?.start()
 
         return true
